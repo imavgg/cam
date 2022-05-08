@@ -1,5 +1,3 @@
-# http://192.168.1.153/capture?_cb
-# from nis import cat
 import requests
 import cv2,json
 from PIL import Image
@@ -21,8 +19,6 @@ from sklearn.cluster import dbscan
 # private_key='fe68cb06-9e6e-424f-afd1-61f2b67f8e11'
 # public_key ='vpvagifi'
 
-# client = MongoClient("mongodb+srv://test:Tcfst123456!@cluster0.h0fej.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-url='mongodb+srv://test:Tcfst123456!@cluster0.h0fej.mongodb.net/Project0?retryWrites=true&w=majority'
 client = MongoClient(url)
 db = client.espcam.cam         # connecct to a Atlas cluster
 
