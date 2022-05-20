@@ -22,9 +22,7 @@ import numpy as np
 from pymongo import MongoClient,InsertOne
 from sklearn.cluster import dbscan
 # connecct to a Atlas cluster
-client = MongoClient("mongodb+srv://test:Tcfst123456!@cluster0.h0fej.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-url='mongodb+srv://test:Tcfst123456!@cluster0.h0fej.mongodb.net/Project0?retryWrites=true&w=majority'
-client = MongoClient(url)
+client = MongoClient("mongodb+srv:// [your url]")
 db = client.espcam.cam         
 sensorHUMID=''
 sensorTEMP=''
